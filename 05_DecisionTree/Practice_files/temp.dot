@@ -1,0 +1,37 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="x1 <= 2.802\ngini = 0.667\nsamples = 1000\nvalue = [334, 333, 333]\nclass = c1", fillcolor="#ffffff"] ;
+1 [label="x2 <= -6.414\ngini = 0.5\nsamples = 667\nvalue = [334, 0, 333]\nclass = c1", fillcolor="#fffffe"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="x2 <= -6.569\ngini = 0.006\nsamples = 333\nvalue = [332, 0, 1]\nclass = c1", fillcolor="#e5813a"] ;
+1 -> 2 ;
+3 [label="gini = 0.0\nsamples = 330\nvalue = [330, 0, 0]\nclass = c1", fillcolor="#e58139"] ;
+2 -> 3 ;
+4 [label="x1 <= -2.93\ngini = 0.444\nsamples = 3\nvalue = [2, 0, 1]\nclass = c1", fillcolor="#f2c09c"] ;
+2 -> 4 ;
+5 [label="gini = 0.0\nsamples = 1\nvalue = [0, 0, 1]\nclass = c3", fillcolor="#8139e5"] ;
+4 -> 5 ;
+6 [label="gini = 0.0\nsamples = 2\nvalue = [2, 0, 0]\nclass = c1", fillcolor="#e58139"] ;
+4 -> 6 ;
+7 [label="x2 <= -6.321\ngini = 0.012\nsamples = 334\nvalue = [2, 0, 332]\nclass = c3", fillcolor="#823ae5"] ;
+1 -> 7 ;
+8 [label="x1 <= -2.037\ngini = 0.5\nsamples = 2\nvalue = [1, 0, 1]\nclass = c1", fillcolor="#ffffff"] ;
+7 -> 8 ;
+9 [label="gini = 0.0\nsamples = 1\nvalue = [1, 0, 0]\nclass = c1", fillcolor="#e58139"] ;
+8 -> 9 ;
+10 [label="gini = 0.0\nsamples = 1\nvalue = [0, 0, 1]\nclass = c3", fillcolor="#8139e5"] ;
+8 -> 10 ;
+11 [label="x2 <= -5.853\ngini = 0.006\nsamples = 332\nvalue = [1, 0, 331]\nclass = c3", fillcolor="#813ae5"] ;
+7 -> 11 ;
+12 [label="x2 <= -5.885\ngini = 0.219\nsamples = 8\nvalue = [1, 0, 7]\nclass = c3", fillcolor="#9355e9"] ;
+11 -> 12 ;
+13 [label="gini = 0.0\nsamples = 7\nvalue = [0, 0, 7]\nclass = c3", fillcolor="#8139e5"] ;
+12 -> 13 ;
+14 [label="gini = 0.0\nsamples = 1\nvalue = [1, 0, 0]\nclass = c1", fillcolor="#e58139"] ;
+12 -> 14 ;
+15 [label="gini = 0.0\nsamples = 324\nvalue = [0, 0, 324]\nclass = c3", fillcolor="#8139e5"] ;
+11 -> 15 ;
+16 [label="gini = 0.0\nsamples = 333\nvalue = [0, 333, 0]\nclass = c2", fillcolor="#39e581"] ;
+0 -> 16 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
